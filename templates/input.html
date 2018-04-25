@@ -1,0 +1,119 @@
+{% extends "utl/base.html" %}
+
+{% block title %}Upload Python Code{% endblock %}
+
+{% block content %}
+    {% if error_message %}
+        <div class="alert alert-warning" role="alert">{{ error_message }}</div>{% endif %}
+    <div class="container main">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h1 class="mx-auto text-primary text-center"><a class="navbar-link" href="{% url 'index' %}">CTAT Tutor
+                    Generator</a></h1>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h3 class="mx-auto text-primary text-center">Upload the Code Snippet</h3>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <section id="tabs">
+                    <ul>
+                        <li class="active" id="file-upload-tab"><a>Upload File</a></li>
+                        <li id="code-input-tab"><a>Write Code Snippet</a></li>
+                    </ul>
+                </section>
+                <section class="tab-panel">
+                    <section id="file_uploader" class="active">
+                        <form enctype="multipart/form-data" action="{% url 'file_uploading' %}" method="post"
+                              class="input-group mb-3">
+                            {% csrf_token %}
+                            {#        <input type="text"#}
+                            <div class="custom-file">
+                                <input type="file" multiple="" value="Choose Python files" name="python_files"
+                                       class="custom-file-input">
+                                <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+                            </div>
+                            <div class="input-group-append">
+                                <input class="input-group-text text-primary" type="submit" value="Upload"/>
+                            </div>
+                        </form>
+                        <div class="instruction">
+                            <p>Choose the Python file you would like to build a tutor for. Something reminders:</p>
+                            <ul>
+                                <li>This Tutor is specifically designed for beginners.</li>
+                                <li>The primary use of the Tutor is to make users understand concepts of program control
+                                    flows.
+                                </li>
+                                <li>Please avoid complex structures and elements, using basic types is recommended</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="code_input" class="">
+                        <form action="{% url 'code_submitting' %}" method="post">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <input type="text" placeholder="name for your code snippet" name="code_name"
+                                   title="code_name" class="form-control" autofocus required>
+                                <br>
+                                <textarea contenteditable="true" name="code" title="code" class="form-control" placeholder="# Your Python Snippet" rows="18" required></textarea>
+                            </div>
+                            <input type="submit" class="btn btn-primary" value="Submit">
+                        </form>
+                        <div class="instruction">
+                            <p>Choose the Python file you would like to build a tutor for. Something reminders:</p>
+                            <ul>
+                                <li>This Tutor is specifically designed for beginners.</li>
+                                <li>The primary use of the Tutor is to make users understand concepts of program control
+                                    flows.
+                                </li>
+                                <li>Please avoid complex structures and elements, using basic types is recommended</li>
+                            </ul>
+                        </div>
+                    </section>
+                </section>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+
+        <div class="row footer">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <p class="footer text-center">
+                    Made with <span class="text-danger"><3</span> by <a href="http://keyang.xyz">Keyang Zheng</a> <br> Powered by <a class="text-success"
+                                                                                                    href="https://www.djangoproject.com">Django</a>
+                </p>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block js %}
+ <script>
+        $("#file-upload-tab").on('click', function () {
+            $("#file_uploader").addClass('active');
+            $(this).addClass('active');
+
+            $('#code-input-tab').removeClass('active');
+            $('#code_input').removeClass('active');
+        });
+
+        $("#code-input-tab").on('click', function () {
+            $("#code_input").addClass('active');
+            $(this).addClass('active');
+
+            $('#file-upload-tab').removeClass('active');
+            $('#file_uploader').removeClass('active');
+        });
+    </script>
+{% endblock %}

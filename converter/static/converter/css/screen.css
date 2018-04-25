@@ -1,0 +1,133 @@
+body {
+    padding-top: 100px;
+    background-color: #e5e5e5;
+}
+
+.container.main {
+    padding-top: 50px;
+    border: 2px solid #333;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.footer.row {
+    margin-top: 180px
+}
+
+.footer p.footer {
+    padding-top: 10px;
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+.main h1 {
+    margin-bottom: 50px;
+}
+
+.main h1>a:hover {
+    text-decoration: none;
+    text-shadow: 1px 1px 3px gray;
+}
+
+.main .row pre {
+    background-color: #333333;
+    color: #eaeaea;
+    padding: 30px 50px;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#tutor-action {
+    text-align: right;
+}
+
+#tutor-action h5 {
+    display: inline-block;
+    margin-left: 20px;
+    font-weight: normal;
+}
+
+#tutor-action h5>a:hover {
+    /*display: inline-block;*/
+    /*margin-left: 20px;*/
+    font-weight: bold;
+    text-decoration-line: none;
+}
+
+.main #tabs ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px 15px 5px;
+
+    background-color: #dddddd;
+    color: #888888;
+
+    margin-left: 5px;
+    margin-right: 5px;
+
+    border: 1px solid #bbbbbb;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.main #tabs ul li.active {
+    background-color: #ffffff;
+    color: inherit;
+    border-bottom: 1px solid #ffffff;
+}
+
+.main #tabs ul {
+    list-style: none;
+    line-break: normal;
+
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+.main section.tab-panel {
+    margin-top: -1px;
+    border: 1px solid #bbbbbb;
+    /*border-top: 1px solid #bbbbbb;*/
+    /*border-left: 1px solid #bbbbbb;*/
+    /*border-right: 1px solid #bbbbbb;*/
+
+    /*border-top-left-radius: 5px;*/
+    /*border-top-right-radius: 5px;*/
+    border-radius: 5px;
+
+    box-shadow: 2px 2px 5px gray;
+
+    padding: 60px 20px 60px;
+}
+
+.main section.tab-panel section {
+    display: none;
+}
+
+.main section.tab-panel section.active {
+    display: block;
+}
+
+.main section.tab-panel div.instruction {
+    margin-top: 30px;
+    padding: 20px 20px 10px;
+
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
+
+    background-color: #eeeeee;
+}
+
+.main section.tab-panel div.instruction ul {
+    padding-left: 20px;
+    list-style: hebrew;
+    font-size: 0.9em;
+}
+
+.main section.tab-panel #code_input textarea {
+    background-color: #333333;
+    color: #eaeaea;
+}

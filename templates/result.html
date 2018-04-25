@@ -1,0 +1,59 @@
+{% extends 'utl/base.html' %}
+
+{% block title %} Tutor Configuration {% endblock %}
+
+{% block content %}
+    {% if error_message %}
+        <div class="alert alert-warning" role="alert">{{ error_message }}</div>{% endif %}
+    <div class="container main">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h1 class="mx-auto text-primary text-center"><a class="navbar-link" href="{% url 'index' %}">CTAT Tutor
+                    Generator</a></h1>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h3 class="mx-auto text-center">Congratulations! <br> your tutor file is waiting for you!</h3>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h3 class="mx-auto text-center">{{ model.name }}</h3>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <section id="tutor-result">
+                    <pre class="line-numbers"><code class="language-python">{{ model.code }}</code></pre>
+                </section>
+                <section id="tutor-action">
+                    <h5><a href="{{ model.preview }}"> > Preview <i class="fas fa-eye"></i></a></h5>
+                    <h5><a href="{{ model.brd }}"> >  Download the Tutor <i class="fas fa-download"></i></a></h5>
+                </section>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row footer">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <p class="footer text-center">
+                    Made with <span class="text-danger"><3</span> by <a href="http://keyang.xyz">Keyang Zheng</a> <br> Powered by <a class="text-success"
+                                                                                                    href="https://www.djangoproject.com">Django</a>
+                </p>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+<script>
+
+</script>
+{% endblock %}

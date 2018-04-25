@@ -1,0 +1,63 @@
+#MyHint {
+    top: 0;
+    width: 100%;
+    height: 224px;
+    padding-left: 0;
+}
+
+#MyTable {
+    width: 100%;
+    border-radius: 5px;
+    padding-right: 30px;
+    z-index: 1;
+}
+
+#MyTable .CTATTable--cell {
+    padding: 2px 5px;
+    width: auto;
+    flex: auto;
+    height: 2em;
+    text-align: center;
+}
+
+#MyTable .CTATTable--cell textarea {
+    width: 95%;
+}
+
+#MyTable.CTATTable {
+    width: 100%;
+}
+
+#instructions {
+    padding-top: 15px;
+}
+
+#code pre {
+    border-radius: 10px;
+}
+
+.table-header ul {
+    list-style: none;
+    padding-left: 0;
+    background: transparent;
+    width: 100%;
+}
+
+.table-header ul > li{
+    list-style: none;
+    display: inline-block;
+    background: transparent;
+}
+
+.table-header ul > li.CTATTable--cell{
+    padding: 2px 5px;
+    /*width: 6.15em;*/
+    flex: auto;
+    height: 2em;
+    text-align: center;
+    background: transparent;
+
+    margin-bottom: -4em;
+    z-index: 99999999;
+
+}

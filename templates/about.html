@@ -1,0 +1,62 @@
+{% extends "utl/base.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+    <div class="container main">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h1 class="mx-auto text-primary text-center"><a class="navbar-link" href="{% url 'index' %}">CTAT Tutor
+                    Generator</a></h1>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <p class="descriptions mx-auto">
+                    CTAT Tutor Generator is built for Cognitive Tutor Authoring Tools (CTAT) by CMU, which builds
+                    cognitive tutors in order to improve student performance. This generator is built to help reduce the
+                    workload when building tutors for teaching basic flow of code in programing.
+                    <br><br>
+                    In traditional ways, building a programing cognitive tutor requires creator to manually go through
+                    the code step by step as a kind of Example-tracing tutor, which is extremely time consuming
+                    especially when a large number of tutors
+                    are required. By using is generator, You can either upload your Python code file or edit the Python
+                    code online, and a Cognitive Tutor will be generated for downloading or previewing.
+                    <br><br>
+                    Currently, the Generator supports only Python programing language, and the basic primitive types of
+                    Python.
+                    <br>
+                    <strong><i class="far fa-square"></i> TODO:</strong> Support for more complex types in Python
+                    language
+                    <br>
+                    <strong><i class="far fa-square"></i> TODO:</strong> Support for complex control in Python language
+                    <br><br>
+                    The automatic code analysis used by the Generator is based on <a class="text-primary"
+                                                                                     href="http://pythontutor.com/visualize.html">PythonTutor</a>
+                    by
+                    <a href="http://pgbovine.net">Philip Guo</a>
+                </p>
+                <br><br>
+                <p class="text-center">
+                    {% load static %}
+                    <a href="http://ctat.pact.cs.cmu.edu"><img src="{% static '/converter/imgs/CTAT.svg' %}"
+                                                               alt="Girl in a jacket"></a>
+                </p>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row footer">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <p class="footer text-center">
+                    Made with <span class="text-danger"><3</span> by <a href="http://keyang.xyz">Keyang Zheng</a> <br> Powered by <a class="text-success"
+                                                                                                    href="https://www.djangoproject.com">Django</a>
+                </p>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+{% endblock %}

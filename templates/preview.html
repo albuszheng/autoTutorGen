@@ -1,0 +1,264 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- generator meta tag -->
+    <!-- leave this for stats and Silex version check -->
+    <meta name="generator" content="Silex v2.2.5">
+    <!-- End of generator meta tag -->
+    <!--CSS-->
+    <link data-silex-static="true" href="https://cdn.ctat.cs.cmu.edu/html-editor/css/silex/normalize.css"
+          rel="stylesheet">
+    <link data-silex-static="true" href="https://cdn.ctat.cs.cmu.edu/html-editor/css/silex/front-end.css"
+          rel="stylesheet">
+    <link data-silex-static="true" href="https://cdn.ctat.cs.cmu.edu/releases/latest/CTAT.css" rel="stylesheet">
+    <!--JS-->
+    <script data-silex-static="true" type="text/javascript"
+            src="https://cdn.ctat.cs.cmu.edu/html-editor/js/jquery.js"></script>
+    <script data-silex-static="true" type="text/javascript"
+            src="https://cdn.ctat.cs.cmu.edu/html-editor/js/jquery-ui.js"></script>
+    <script data-silex-static="true" type="text/javascript"
+            src="https://cdn.ctat.cs.cmu.edu/releases/latest/ctatloader.js"></script>
+    <script data-silex-static="true" type="text/javascript"
+            src="https://cdn.ctat.cs.cmu.edu/html-editor/js/ctat/ctat.min.js"></script>
+
+    <link rel="stylesheet" href="{% static '/converter/Assets/foraddasm_s2-styles.css' %}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+          integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+          integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+    <!-- Prism -->
+    <link rel="stylesheet" href="{% static '/converter/css/Prism.css' %}">
+    <script src="{% static '/converter/js/Prism.js' %}"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static '/converter/css/screen.css' %}">
+    <link rel="stylesheet" href="{% static '/converter/css/preview.css' %}">
+
+    <style type="text/css" class="silex-style"></style>
+
+    <meta name="interface-id" content="{{ name }}">
+
+
+    <style id="current-page-style">
+        .page-page-1 {
+            display: inherit;
+        }
+    </style>
+    <!-- Silex HEAD tag do not remove -->
+    <!-- End of Silex HEAD tag do not remove -->
+
+</head>
+<body class="body-initial prevent-draggable silex-runtime silex-published">
+<a id="page-page-1" data-silex-type="page" class="page-element">Page 1</a>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <h1 class="mx-auto text-primary text-center"><a class="navbar-link" href="{% url 'index' %}">CTAT Tutor
+                Generator</a></h1>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div id="code" class="col-md-4">
+            <pre class="line-numbers"><code class="language-python">{{ code }}</code></pre>
+        </div>
+        <div id="instructions" class="col-md-4">
+            <p>Please fill in the trace table by walking through the
+                code
+                line by line. Only fill in the cells where the value of the variable has changed.</p>
+            {#            <div data-silex-type="text"#}
+            {#                 class="CTATTextField editable-style silex-id-1501622373405-0 text-element page-page-1 paged-element CTATComponent"#}
+            {#                 data-silex-id="silex-id-1501622373405-0" id="ctatdiv46" data-ctat-component="CTATTextBasedComponent"#}
+            {#                 data-ctat-enabled="false" contenteditable="false">Please fill in the trace table by walking through the#}
+            {#                code#}
+            {#                line by line. Only fill in the cells where the value of the variable has changed.#}
+            {#            </div>#}
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <br>
+    <br>
+    <div data-silex-id="background-initial"
+         class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+            <div data-silex-type="ctat"
+                 class="CTATTable editable-style page-page-1 paged-element CTATComponent"
+                 data-ctat-tabindex="1" data-silex-id="silex-id-1501618659400-2" id="MyTable"
+                 data-ctat-component="CTATTable"
+                 data-ctat-enabled="true" data-ctat-num-rows="{{ steps }}" data-ctat-num-cols="{{ var_num }}"
+                 data-ctat-has-header="true"
+                 tabindex="1"></div>
+
+            <div class="table-header">
+                <ul class="CTATTable--row">
+                    <li class="CTATTable--cell">Line</li>
+                    {% for var in var_list %}
+                    <li class="CTATTable--cell">{{ var }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {#            <div data-silex-type="text"#}
+            {#                 class="CTATTextField editable-style silex-id-1501618800864-4 text-element page-page-1 paged-element CTATComponent"#}
+            {#                 data-silex-id="silex-id-1501618800864-4" id="ctatdiv36" data-ctat-component="CTATTextBasedComponent"#}
+            {#                 data-ctat-enabled="false" contenteditable="false" data-ctat-show-feedback="false"#}
+            {#                 data-ctat-show-hint-highlight="false" data-ctat-tutor="false" data-ctat-disable-on-correct="false">i#}
+            {#            </div>#}
+            {#            <div data-silex-type="text"#}
+            {#                 class="CTATTextField editable-style text-element CTATComponent silex-id-1501618908959-5 page-page-1 paged-element"#}
+            {#                 data-silex-id="silex-id-1501618908959-5" id="ctatdiv37" data-ctat-component="CTATTextBasedComponent"#}
+            {#                 data-ctat-enabled="false" contenteditable="false" data-ctat-show-feedback="false"#}
+            {#                 data-ctat-show-hint-highlight="false" data-ctat-tutor="false" data-ctat-disable-on-correct="false">x#}
+            {#            </div>#}
+        </div>
+        <div class="col-md-4">
+            <div data-silex-type="ctat"
+                 class="CTATHintWidget undefined editable-style silex-id-1501619831464-12 page-page-1 paged-element"
+                 data-ctat-tabindex="1" data-silex-id="silex-id-1501619831464-12" id="MyHint">
+                <table style="width: 100%; height: 100%;">
+                    <tbody>
+                    <tr height="125">
+                        <td>
+                            <div class="CTATHintWindow CTATComponent" id="ctatdiv48"
+                                 data-ctat-component="CTATHintWindow"
+                                 onkeypress="return noenter(event)" data-ctat-enabled="true"></div>
+                        </td>
+                        <td width="64" style="padding-top: 0px; padding-bottom: 0px;">
+                            <div id="hint" style="margin-bottom: 2px" class="CTATHintButton CTATComponent"
+                                 data-ctat-component="CTATHintButton" data-ctat-enabled="true"></div>
+                            <div id="done" class="CTATDoneButton CTATComponent" data-ctat-component="CTATDoneButton"
+                                 data-ctat-enabled="true"></div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+
+
+        {#        <div data-silex-id="background-initial"#}
+        {#             class="background background-initial editable-style container-element prevent-draggable"#}
+        {#             data-silex-type="container">#}
+        {#            <div data-silex-type="ctat"#}
+        {#                 class="CTATTable editable-style silex-id-1501618659400-2 page-page-1 paged-element CTATComponent"#}
+        {#                 data-ctat-tabindex="1" data-silex-id="silex-id-1501618659400-2" id="MyTable"#}
+        {#                 data-ctat-component="CTATTable"#}
+        {#                 data-ctat-enabled="true" data-ctat-num-rows="7" data-ctat-num-cols="{{ var_num }}"#}
+        {#                 data-ctat-has-header="true"#}
+        {#                 tabindex="1"></div>#}
+        {#    {% for var_name in var_list %}#}
+        {#    <div data-silex-type="text"#}
+        {#         class="CTATTextField editable-style silex-id-1501618800864-4 text-element page-page-1 paged-element CTATComponent"#}
+        {#         data-silex-id="silex-id-1501618800864-4" id="ctatdiv36" data-ctat-component="CTATTextBasedComponent"#}
+        {#         data-ctat-enabled="false" contenteditable="false" data-ctat-show-feedback="false"#}
+        {#         data-ctat-show-hint-highlight="false" data-ctat-tutor="false" data-ctat-disable-on-correct="false">{{ var_name }}#}
+        {#    </div>#}
+        {#    {% endfor %}#}
+        {##}
+        {#            <div data-silex-type="text"#}
+        {#                 class="CTATTextField editable-style silex-id-1501618800864-4 text-element page-page-1 paged-element CTATComponent"#}
+        {#                 data-silex-id="silex-id-1501618800864-4" id="ctatdiv36" data-ctat-component="CTATTextBasedComponent"#}
+        {#                 data-ctat-enabled="false" contenteditable="false" data-ctat-show-feedback="false"#}
+        {#                 data-ctat-show-hint-highlight="false" data-ctat-tutor="false" data-ctat-disable-on-correct="false">i#}
+        {#            </div>#}
+        {#            <div data-silex-type="text"#}
+        {#                 class="CTATTextField editable-style text-element CTATComponent silex-id-1501618908959-5 page-page-1 paged-element"#}
+        {#                 data-silex-id="silex-id-1501618908959-5" id="ctatdiv37" data-ctat-component="CTATTextBasedComponent"#}
+        {#                 data-ctat-enabled="false" contenteditable="false" data-ctat-show-feedback="false"#}
+        {#                 data-ctat-show-hint-highlight="false" data-ctat-tutor="false" data-ctat-disable-on-correct="false">x#}
+        {#            </div>#}
+        {##}
+        {##}
+        {##}
+        {#            <div data-silex-type="ctat"#}
+        {#                 class="CTATHintWidget undefined editable-style silex-id-1501619831464-12 page-page-1 paged-element"#}
+        {#                 data-ctat-tabindex="1" data-silex-id="silex-id-1501619831464-12" id="MyHint">#}
+        {#                <table style="width: 100%; height: 100%;">#}
+        {#                    <tbody>#}
+        {#                    <tr height="125">#}
+        {#                        <td>#}
+        {#                            <div class="CTATHintWindow CTATComponent" id="ctatdiv48"#}
+        {#                                 data-ctat-component="CTATHintWindow"#}
+        {#                                 onkeypress="return noenter(event)" data-ctat-enabled="true"></div>#}
+        {#                        </td>#}
+        {#                        <td width="64" style="padding-top: 0px; padding-bottom: 0px;">#}
+        {#                            <div id="hint" style="margin-bottom: 2px" class="CTATHintButton CTATComponent"#}
+        {#                                 data-ctat-component="CTATHintButton" data-ctat-enabled="true"></div>#}
+        {#                            <div id="done" class="CTATDoneButton CTATComponent" data-ctat-component="CTATDoneButton"#}
+        {#                                 data-ctat-enabled="true"></div>#}
+        {#                        </td>#}
+        {#                    </tr>#}
+        {#                    </tbody>#}
+        {#                </table>#}
+        {#            </div>#}
+
+
+        {#    <div data-silex-type="text"#}
+        {#         class="CTATTextField editable-style silex-id-1501619071371-11 text-element page-page-1 paged-element CTATComponent"#}
+        {#         data-silex-id="silex-id-1501619071371-11" id="ctatdiv49" data-ctat-component="CTATTextBasedComponent"#}
+        {#         data-ctat-enabled="false" contenteditable="false">x = 1#}
+        {#        <br>for i in range(1, 2):#}
+        {#    </div>#}
+        {#    <div data-silex-type="text"#}
+        {#         class="CTATTextField editable-style silex-id-1502818272059-1 text-element page-page-1 paged-element CTATComponent"#}
+        {#         data-silex-id="silex-id-1502818272059-1" id="ctatdiv52" data-ctat-component="CTATTextBasedComponent"#}
+        {#         data-ctat-enabled="false" contenteditable="false">x += i#}
+        {#    </div>#}
+        {##}
+        {#    <div data-silex-type="text"#}
+        {#         class="CTATTextField editable-style silex-id-1503363288934-1 text-element page-page-1 paged-element CTATComponent"#}
+        {#         data-silex-id="silex-id-1503363288934-1" id="ctatdiv64" data-ctat-component="CTATTextBasedComponent"#}
+        {#         data-ctat-enabled="false" contenteditable="false">Line#}
+        {#    </div>#}
+        {#    <div data-silex-type="text"#}
+        {#         class="CTATTextField editable-style silex-id-1503363831117-2 text-element page-page-1 paged-element CTATComponent"#}
+        {#         data-silex-id="silex-id-1503363831117-2" id="ctatdiv139" data-ctat-component="CTATTextBasedComponent"#}
+        {#         data-ctat-enabled="false" contenteditable="false">1#}
+        {#        <br>2#}
+        {#        <br>3#}
+        {#    </div>#}
+        {#    <div data-silex-type="text"#}
+        {#         class="CTATTextField editable-style silex-id-1501622373405-0 text-element page-page-1 paged-element CTATComponent"#}
+        {#         data-silex-id="silex-id-1501622373405-0" id="ctatdiv46" data-ctat-component="CTATTextBasedComponent"#}
+        {#         data-ctat-enabled="false" contenteditable="false">Please fill in the trace table by walking through the code#}
+        {#        line by line. Only fill in the cells where the value of the variable has changed.#}
+        {#    </div>#}
+    </div>
+</div>
+<script>
+    $("#MyTable.R0C0 textarea").val('Line');
+    vars = [];
+    {% for var in var_list %}
+        vars.push("{{ var }}");
+    {% endfor %}
+    for (var i = 0; i < vars.length; i++) {
+        var selector = "#MyTable.R0C" + (i+1) + " textarea";
+        $(selector).text(vars[i])
+    }
+</script>
+<script>
+    var myVars =
+        {
+            question_file: "{{ url }}",
+            tutoring_service_communication: "javascript"
+        };
+
+    // The CTAT JavaScript code looks for a ctatOnload() function and
+    // executes it automatically if it is defined in your tutor.
+    function ctatOnload() {
+        initTutor(myVars);
+    }
+</script>
+
+
+</body>
+</html>
