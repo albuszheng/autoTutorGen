@@ -129,11 +129,11 @@ STATIC_URL = '/static/'
 # Extra places for collectstatic to find static files.
 # SESSION_ENGINE = "django.contrib.sessions.backends.cached_db"
 
-STATIC_ROOT = 'static'
-
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+# STATIC_ROOT = 'static'
+#
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, 'static'),
+# )
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 django_heroku.settings(locals())
