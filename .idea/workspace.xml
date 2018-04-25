@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fffa38af-1358-4b42-b4c9-2fa2d1c25f22" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tutor_converter/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_converter/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,14 +71,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tutor_converter/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="126" column="24" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
+            <state relative-caret-position="329">
+              <caret line="133" column="20" selection-start-line="133" selection-start-column="20" selection-end-line="133" selection-end-column="20" />
               <folding>
                 <element signature="e#316#325#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Procfile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tutor_converter/Procfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="46" selection-start-column="46" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -151,15 +161,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="screen.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/converter/static/converter/css/screen.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -210,6 +211,7 @@
         <option value="$PROJECT_DIR$/converter/brd/trace_analysis.py" />
         <option value="$PROJECT_DIR$/converter/views.py" />
         <option value="$PROJECT_DIR$/tutor_converter/settings.py" />
+        <option value="$PROJECT_DIR$/tutor_converter/Procfile" />
       </list>
     </option>
   </component>
@@ -248,76 +250,6 @@
             <path>
               <item name="tutor_converter" type="b2602c69:ProjectViewProjectNode" />
               <item name="tutor_converter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tutor_converter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tutor_converter" type="462c0819:PsiDirectoryNode" />
-              <item name="converter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tutor_converter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tutor_converter" type="462c0819:PsiDirectoryNode" />
-              <item name="converter" type="462c0819:PsiDirectoryNode" />
-              <item name="brd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tutor_converter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tutor_converter" type="462c0819:PsiDirectoryNode" />
-              <item name="converter" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tutor_converter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tutor_converter" type="462c0819:PsiDirectoryNode" />
-              <item name="converter" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="converter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tutor_converter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tutor_converter" type="462c0819:PsiDirectoryNode" />
-              <item name="converter" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="converter" type="462c0819:PsiDirectoryNode" />
-              <item name="Assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tutor_converter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tutor_converter" type="462c0819:PsiDirectoryNode" />
-              <item name="converter" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="converter" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tutor_converter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tutor_converter" type="462c0819:PsiDirectoryNode" />
-              <item name="converter" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="converter" type="462c0819:PsiDirectoryNode" />
-              <item name="imgs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tutor_converter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tutor_converter" type="462c0819:PsiDirectoryNode" />
-              <item name="converter" type="462c0819:PsiDirectoryNode" />
-              <item name="utl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tutor_converter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tutor_converter" type="462c0819:PsiDirectoryNode" />
-              <item name="temp_file" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tutor_converter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tutor_converter" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tutor_converter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tutor_converter" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="utl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tutor_converter" type="b2602c69:ProjectViewProjectNode" />
@@ -856,11 +788,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tutor_converter/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="126" column="24" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="24" />
+        <state relative-caret-position="329">
+          <caret line="133" column="20" selection-start-line="133" selection-start-column="20" selection-end-line="133" selection-end-column="20" />
           <folding>
             <element signature="e#316#325#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tutor_converter/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="46" selection-start-column="46" selection-end-column="46" />
         </state>
       </provider>
     </entry>
