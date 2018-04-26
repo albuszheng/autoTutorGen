@@ -120,7 +120,7 @@
            var fileName = $(this).val();
            {#alert(fileName);#}
            {# var fileName = $(this).val(); #}
-           var subfileName = fileName.substring(0,16)+"...";
+           var subfileName = fileName.split('C:\\fakepath\\');
            $('#file-label').text(subfileName);
         });
     </script>
