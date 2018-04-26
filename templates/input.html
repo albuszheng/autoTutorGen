@@ -40,7 +40,7 @@
                             <div class="custom-file">
                                 <input type="file" multiple="" value="Choose Python files" name="python_files"
                                        class="custom-file-input">
-                                <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+                                <label id="file-label" class="custom-file-label" for="inputGroupFile02">Choose file</label>
                             </div>
                             <div class="input-group-append">
                                 <input class="input-group-text text-primary" type="submit" value="Upload"/>
@@ -114,6 +114,14 @@
 
             $('#file-upload-tab').removeClass('active');
             $('#file_uploader').removeClass('active');
+        });
+
+        $('input[name="python_files"]').change(function(){
+           var fileName = $(this).val();
+           {#alert(fileName);#}
+           {# var fileName = $(this).val(); #}
+           var subfileName = fileName.substring(0,16)+"...";
+           $('#file-label').text(subfileName);
         });
     </script>
 {% endblock %}

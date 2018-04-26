@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fffa38af-1358-4b42-b4c9-2fa2d1c25f22" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tutor_converter/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tutor_converter/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/input.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/input.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -71,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tutor_converter/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="94" column="168" selection-start-line="94" selection-start-column="168" selection-end-line="94" selection-end-column="168" />
+            <state relative-caret-position="223">
+              <caret line="84" column="14" selection-start-line="84" selection-start-column="7" selection-end-line="84" selection-end-column="14" />
               <folding>
                 <element signature="e#316#325#0" expanded="true" />
               </folding>
@@ -143,11 +142,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="input.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="input.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/input.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="66" column="165" selection-start-line="66" selection-start-column="165" selection-end-line="66" selection-end-column="165" />
+            <state relative-caret-position="214">
+              <caret line="115" column="31" lean-forward="true" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -177,6 +176,7 @@
       <find>code</find>
       <find>preview</find>
       <find>s</find>
+      <find>default</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -207,12 +207,12 @@
         <option value="$PROJECT_DIR$/templates/result.html" />
         <option value="$PROJECT_DIR$/converter/static/converter/css/preview.css" />
         <option value="$PROJECT_DIR$/templates/preview.html" />
-        <option value="$PROJECT_DIR$/templates/input.html" />
         <option value="$PROJECT_DIR$/converter/brd/trace_analysis.py" />
         <option value="$PROJECT_DIR$/converter/views.py" />
         <option value="$PROJECT_DIR$/tutor_converter/Procfile" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/tutor_converter/settings.py" />
+        <option value="$PROJECT_DIR$/templates/input.html" />
       </list>
     </option>
   </component>
@@ -251,6 +251,17 @@
             <path>
               <item name="tutor_converter" type="b2602c69:ProjectViewProjectNode" />
               <item name="tutor_converter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tutor_converter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tutor_converter" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tutor_converter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tutor_converter" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="utl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tutor_converter" type="b2602c69:ProjectViewProjectNode" />
@@ -743,13 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/input.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="66" column="165" selection-start-line="66" selection-start-column="165" selection-end-line="66" selection-end-column="165" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/converter/utl/file_handle.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -803,11 +807,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tutor_converter/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="94" column="168" selection-start-line="94" selection-start-column="168" selection-end-line="94" selection-end-column="168" />
+        <state relative-caret-position="223">
+          <caret line="84" column="14" selection-start-line="84" selection-start-column="7" selection-end-line="84" selection-end-column="14" />
           <folding>
             <element signature="e#316#325#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/input.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="115" column="31" lean-forward="true" selection-start-line="115" selection-start-column="31" selection-end-line="115" selection-end-column="31" />
         </state>
       </provider>
     </entry>
