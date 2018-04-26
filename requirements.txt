@@ -3,3 +3,4 @@ django_heroku==0.3.1
 Django==2.0.3
 yattag==1.10.0
 gunicorn==19.7.1
+dj-database-url==0.5.0
