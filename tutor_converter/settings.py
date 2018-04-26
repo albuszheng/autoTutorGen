@@ -92,7 +92,7 @@ WSGI_APPLICATION = 'tutor_converter.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default=config('DATABASE_URL')
+        default='postgres://qvrxvpvthybsly:3782cdc55601cb0ccb8ea1bb0f6b7848d163e4f6dd268b4760cb5b44bba8db4e@ec2-54-243-31-34.compute-1.amazonaws.com:5432/dcsmcge6h40ik3'
     )
 }
 
