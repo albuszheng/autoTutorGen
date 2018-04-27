@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fffa38af-1358-4b42-b4c9-2fa2d1c25f22" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/converter/brd/trace_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/converter/brd/trace_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/preview.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -103,8 +104,8 @@
       <file leaf-file-name="trace_analysis.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/converter/brd/trace_analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="119" column="58" selection-start-line="119" selection-start-column="58" selection-end-line="119" selection-end-column="58" />
+            <state relative-caret-position="582">
+              <caret line="131" column="61" selection-start-line="131" selection-start-column="61" selection-end-line="131" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -136,8 +137,8 @@
       <file leaf-file-name="preview.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/preview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="107" column="18" selection-start-line="107" selection-start-column="18" selection-end-line="107" selection-end-column="18" />
+            <state relative-caret-position="324">
+              <caret line="77" column="74" selection-start-line="77" selection-start-column="74" selection-end-line="77" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -197,12 +198,12 @@
         <option value="$PROJECT_DIR$/templates/utl/base.html" />
         <option value="$PROJECT_DIR$/templates/result.html" />
         <option value="$PROJECT_DIR$/converter/static/converter/css/preview.css" />
-        <option value="$PROJECT_DIR$/templates/preview.html" />
         <option value="$PROJECT_DIR$/converter/views.py" />
         <option value="$PROJECT_DIR$/tutor_converter/Procfile" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/tutor_converter/settings.py" />
         <option value="$PROJECT_DIR$/templates/input.html" />
+        <option value="$PROJECT_DIR$/templates/preview.html" />
         <option value="$PROJECT_DIR$/converter/brd/trace_analysis.py" />
       </list>
     </option>
@@ -375,9 +376,9 @@
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3296131" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.26992753" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.26992753" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3296131" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23258306" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23258306" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="6" weight="0.32902828" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3296131" />
@@ -750,13 +751,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/preview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="107" column="18" selection-start-line="107" selection-start-column="18" selection-end-line="107" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/converter/utl/file_handle.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -828,10 +822,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/preview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="77" column="74" selection-start-line="77" selection-start-column="74" selection-end-line="77" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/converter/brd/trace_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="119" column="58" selection-start-line="119" selection-start-column="58" selection-end-line="119" selection-end-column="58" />
+        <state relative-caret-position="582">
+          <caret line="131" column="61" selection-start-line="131" selection-start-column="61" selection-end-line="131" selection-end-column="61" />
         </state>
       </provider>
     </entry>

@@ -123,13 +123,13 @@ def heap_list(old_heap:list, new_heap:list):
     if old_len != new_len:
         for i in range(0, new_len):
             if i < old_len and old_heap[i] != new_heap[i]:
-                result.append({"changed_value": "[" + str(i) + "]" + ":" + str(new_heap[i+1])})
+                result.append({"changed_value": "[" + str(i-1) + "]" + ":" + str(new_heap[i+1])})
             else:
-                result.append({"changed_value": "[" + str(i) + "]" + ":" + str(new_heap[i+1])})
+                result.append({"changed_value": "[" + str(i-1) + "]" + ":" + str(new_heap[i+1])})
     else:
         for i in range(0, old_len):
             if old_heap[i] != new_heap[i]:
-                result.append({"changed_value": "[" + str(i) + "]" + ":" + str(new_heap[i+1])})
+                result.append({"changed_value": "[" + str(i-1) + "]" + ":" + str(new_heap[i+1])})
     return result
 
 def heap_tuple(old_heap:list, new_heap:list):
