@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fffa38af-1358-4b42-b4c9-2fa2d1c25f22" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/converter/brd/trace_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/converter/brd/trace_analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/preview.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -101,7 +100,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="trace_analysis.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="trace_analysis.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/converter/brd/trace_analysis.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="582">
@@ -134,11 +133,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="preview.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="preview.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/preview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="77" column="74" selection-start-line="77" selection-start-column="74" selection-end-line="77" selection-end-column="74" />
+            <state relative-caret-position="347">
+              <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -203,8 +202,8 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/tutor_converter/settings.py" />
         <option value="$PROJECT_DIR$/templates/input.html" />
-        <option value="$PROJECT_DIR$/templates/preview.html" />
         <option value="$PROJECT_DIR$/converter/brd/trace_analysis.py" />
+        <option value="$PROJECT_DIR$/templates/preview.html" />
       </list>
     </option>
   </component>
@@ -376,9 +375,9 @@
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3296131" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.26992753" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.26992753" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3296131" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23258306" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.23258306" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="6" weight="0.32902828" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3296131" />
@@ -399,6 +398,35 @@
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32914045" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info id="Unicode Browser" order="2" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23258306" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="DB Execution Console" order="13" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.3296131" />
+      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
+      <window_info anchor="right" id="R Graphics" order="4" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.26992753" />
+      <window_info id="DB Browser" order="3" />
+      <window_info anchor="right" id="R Packages" order="3" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3296131" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3296131" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32902828" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3296131" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.3298893" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="right" id="SciView" order="5" weight="0.32960895" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32914045" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -822,17 +850,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/preview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="77" column="74" selection-start-line="77" selection-start-column="74" selection-end-line="77" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/converter/brd/trace_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="582">
           <caret line="131" column="61" selection-start-line="131" selection-start-column="61" selection-end-line="131" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/preview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="78" column="20" selection-start-line="78" selection-start-column="20" selection-end-line="78" selection-end-column="20" />
         </state>
       </provider>
     </entry>
