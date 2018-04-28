@@ -1,6 +1,7 @@
 from yattag import Doc, indent
 import os
 
+# method of creating the brd file and stored in the disk
 def create_brd_file(brd_content: str, problem_name: str):
     path = "temp_file/brd/"
     if not os.path.exists(path):
@@ -12,6 +13,7 @@ def create_brd_file(brd_content: str, problem_name: str):
     return path+file_name
 
 
+# build the behavior graph file based on the cognitive_model
 def build_behavior_graph(cognitive_model, problem_name:str, var_lists: list):
     stage_changes = len(cognitive_model)
     node_count = stage_changes + 1
@@ -47,7 +49,6 @@ def build_behavior_graph(cognitive_model, problem_name:str, var_lists: list):
         R_value = 1
         current_line = 1
         for i in range(1, stage_changes + 1):
-            # print(cognitive_model[i-1])
             if current_line != cognitive_model[i-1]['line']:
                 current_line = cognitive_model[i-1]['line']
                 R_value += 1
